@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Positioning</title>
+<style>
+.box {
+  width:100px; height:100px; background:#0ea5a4; color:#fff;
+  text-align:center; line-height:100px; margin:10px;
+}
+.relative { position:relative; top:20px; left:20px; background:#3b82f6; }
+.absolute-parent { position:relative; background:#f1f5f9; height:150px; }
+.absolute { position:absolute; top:20px; right:20px; background:#f97316; }
+.fixed { position:fixed; bottom:10px; right:10px; background:#10b981; }
+</style>
+</head>
+<body>
+<h1>CSS Positioning</h1>
+
+<div class="box">Static</div>
+<div class="box relative">Relative</div>
+
+<div class="absolute-parent">
+  Parent (Relative)
+  <div class="box absolute">Absolute</div>
+</div>
+
+<div class="box fixed">Fixed</div>
+<a href="../index.html">⬅ Back</a>
+</body>
+</html>
